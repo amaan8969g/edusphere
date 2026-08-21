@@ -1,0 +1,36 @@
+import axiosInstance from './axiosInstance';
+
+export const registerUser = async (userData) => {
+  const response = await axiosInstance.post('/auth/register', userData);
+  return response.data;
+};
+
+export const loginUser = async (credentials) => {
+  const response = await axiosInstance.post('/auth/login', credentials);
+  return response.data;
+};
+
+export const fetchMe = async () => {
+  const response = await axiosInstance.get('/auth/me');
+  return response.data;
+};
+
+export const updateProfile = async (profileData) => {
+  const response = await axiosInstance.put('/auth/update-profile', profileData);
+  return response.data;
+};
+
+export const updatePassword = async (passwordData) => {
+  const response = await axiosInstance.put('/auth/update-password', passwordData);
+  return response.data;
+};
+
+export const forgotPassword = async (email) => {
+  const response = await axiosInstance.post('/auth/forgot-password', { email });
+  return response.data;
+};
+
+export const resetPassword = async (token, password) => {
+  const response = await axiosInstance.patch(`/auth/reset-password/${token}`, { password });
+  return response.data;
+};

@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output
+# dist/
+
+# Logs
+*.log
+tunnel.log
+
+# Environment variables
+# .env
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
