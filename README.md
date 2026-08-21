@@ -10,10 +10,9 @@ The platform supports **online courses, video lessons, quizzes, live virtual cla
 
 ### Backend API
 
-🚀 **Deployed Backend:**
+🚀 **Live Demo:**
 https://edusphere-m3ff.onrender.com
 
-> The backend API is currently deployed on Render. The React frontend can be run locally or deployed separately.
 
 ### GitHub Repository
 
